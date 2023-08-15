@@ -1,6 +1,3 @@
-import { defaultTheme } from "@/styles/themes/default"
-import { ThemeProvider } from "styled-components"
-import { GlobalStyle } from "../styles/global"
 import { Header } from "@/components"
 import { Button, Form, Input, ResultContent, ResultInfo, ResultInfoTitle, Span } from "@/styles/cnpjStyles"
 
@@ -23,8 +20,7 @@ export default function CnpjPage() {
   console.log(value)
 
   return (
-    <ThemeProvider theme={defaultTheme}>
-
+    <>
         <Header />
         
         <Form>
@@ -41,7 +37,6 @@ export default function CnpjPage() {
           <ResultInfo><Span>Endereço:</Span> {value.number}</ResultInfo>
           <ResultInfo><Span>Atividade:</Span> {value.mainActivity}</ResultInfo>
         </ResultContent>
-      <GlobalStyle />
-    </ThemeProvider>
+    </>
   )
 }

@@ -10,13 +10,13 @@ export const Container = styled.header `
         font-size: 1.5rem;
 
         border-bottom: 1px solid ${defaultTheme.grey};
-`
 
-export const A = styled.a`
-        text-decoration: none;
+        a {
+                text-decoration: none;
         color: ${defaultTheme.lightGrey};
 
         &:hover {
-                color: ${defaultTheme.white};;
+                color: ${defaultTheme.white};
         }
+}
 `

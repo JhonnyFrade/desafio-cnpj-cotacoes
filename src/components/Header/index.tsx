@@ -1,12 +1,13 @@
-import { A, Container } from './styles'
+import Link from 'next/link'
+import { Container } from './styles'
 
 export const Header = () =>  {
     return (
+
         <Container>
-            
-            <A href='../../'>DesafioNext</A>
-            <A href="../../cnpj">Consulta de CNPJ</A>
-            <A href="../../cotacoes">Consulta de cotaçoes</A>
+            <Link href='../../'>DesafioNext</Link>
+            <Link href="../../cnpj">Consulta de CNPJ</Link>          
+            <Link href="../../cotacoes">Consulta de cotaçoes</Link>
         </Container>
         )
     }
